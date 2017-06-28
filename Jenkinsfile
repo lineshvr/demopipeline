@@ -15,7 +15,7 @@ pipeline {
                 }
             }
         }
-	}
+
 	  stage('Release build') {
             when { branch 'master' }
             agent any
@@ -30,4 +30,4 @@ pipeline {
             }
         }
 	}
-	
+		}
