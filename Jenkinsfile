@@ -1,13 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
-            steps {
-                bat 'set'
-            }
-        }
-    }
-    stages {
         stage('Branch build') {
             agent any
             steps {
@@ -23,5 +16,18 @@ pipeline {
             }
         }
 	}
+	  stage('Release build') {
+            when { branch 'master' }
+            agent any
+            steps {
+                script {
+                    currentBuild.description = "Release: ${env.version}"
+                    sh "mvn versions:set -DnewVersion=${env.version}"
+                    sh 'mvn clean deploy -B'
+                    step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
+                    tagPuppetModules("${env.version}")
+                }
+            }
+        }
 	}
 	
