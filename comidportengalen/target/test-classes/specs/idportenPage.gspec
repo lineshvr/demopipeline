@@ -1,0 +1,70 @@
+
+@objects
+    header-logo        xpath   //*[@id="header"]/strong/a/img
+    header-text        xpath   //*[@id="header"]/h1
+    minid-text         xpath   //*[@id="content"]/div[2]/div[1]/h2
+    ssnnummer           css     input[name='input_USERNAME_IDPORTEN']
+    password           css     input[name='input_PASSWORD_IDPORTEN']
+    neste              id      nextbtn
+    avbryt             xpath     //*[@id="content"]/div[2]/form/fieldset/div[3]/input[2]
+    box                xpath    //*[@id="content"]/div[2]
+    ssn_nummer_label   xpath  //*[@id="content"]/div[2]/form/fieldset/div[1]/label
+    logo               xpath  //*[@id="content"]/div[2]/div[1]/strong/img
+    idporten_logo      xpath   //*[@id="content"]/div[2]/div[1]/h2
+    inside_box         xpath   //*[@id="content"]/div[2]/div[1]
+
+@groups
+    idporten_elements_i_container  avbryt,neste, password, ssnnummer, minid-text
+
+@groups
+    minid_elements_i_container minid-text  ,logo,idporten_logo
+
+= Header =
+ @on *
+    header-logo:
+           right-of header-text 550px
+    minid-text:
+           below header-text 45px
+
+    ssnnummer, password:
+            height 25 to 35 px
+
+    logo:
+       image file logo-4.gif,  error 20px
+
+    ssn_nummer_label:
+        text is "Fødselsnummer:"
+
+    idporten_logo:
+        right-of minid-text 10px
+
+    = Skeleton =
+        &idporten_elements_i_container:
+            inside box
+
+
+    = Skeleton =
+        &minid_elements_i_container:
+            inside inside_box
+
+ @on desktop, tablet
+        ssnnummer:
+                    aligned vertically all password
+                    aligned vertically all avbryt
+                    aligned vertically all neste
+                    aligned vertically all ssnnummer
+
+
+ @on mobile
+        header-logo:
+                   right-of header-text 550px
+        minid-text:
+                   below header-text 45px
+
+        ssnnummer:
+                    aligned horizontally all password
+                    aligned horizontally all avbryt
+                    aligned horizontally all neste
+                    aligned horizontally all ssnnummer
+
+

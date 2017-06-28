@@ -1,0 +1,291 @@
+{
+  "testId" : "1-welcomepagetest-loginpage-shouldlookgood-ondevice-mobile-450x800-",
+  "name" : "WelcomePageTest#loginPage_shouldLookGood_onDevice (mobile 450x800)",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Check layout /specs/idportenPage.gspec",
+      "status" : "error",
+      "time" : 1495623470107,
+      "includedTags" : [ "mobile" ],
+      "excludedTags" : [ ],
+      "sections" : [ {
+        "name" : "Header",
+        "place" : {
+          "filePath" : "/specs/idportenPage.gspec",
+          "lineNumber" : 22
+        },
+        "objects" : [ {
+          "name" : "header-logo",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "/specs/idportenPage.gspec",
+              "lineNumber" : 25
+            },
+            "name" : "right-of header-text 550px",
+            "errors" : [ "\"header-logo\" is -135px right of \"header-text\" instead of 550px" ],
+            "highlight" : [ "header-logo", "header-text" ]
+          }, {
+            "status" : "error",
+            "place" : {
+              "filePath" : "/specs/idportenPage.gspec",
+              "lineNumber" : 60
+            },
+            "name" : "right-of header-text 550px",
+            "errors" : [ "\"header-logo\" is -135px right of \"header-text\" instead of 550px" ],
+            "highlight" : [ "header-logo", "header-text" ]
+          } ]
+        }, {
+          "name" : "minid-text",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "/specs/idportenPage.gspec",
+              "lineNumber" : 27
+            },
+            "name" : "below header-text 45px",
+            "highlight" : [ "minid-text", "header-text" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "/specs/idportenPage.gspec",
+              "lineNumber" : 62
+            },
+            "name" : "below header-text 45px",
+            "highlight" : [ "minid-text", "header-text" ]
+          } ]
+        }, {
+          "name" : "ssnnummer",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "/specs/idportenPage.gspec",
+              "lineNumber" : 30
+            },
+            "name" : "height 25 to 35 px",
+            "highlight" : [ "ssnnummer" ]
+          }, {
+            "status" : "error",
+            "place" : {
+              "filePath" : "/specs/idportenPage.gspec",
+              "lineNumber" : 65
+            },
+            "name" : "aligned horizontally all password",
+            "errors" : [ "\"password\" is not aligned horizontally all with \"ssnnummer\". Offset is 45px" ],
+            "highlight" : [ "ssnnummer", "password" ]
+          }, {
+            "status" : "error",
+            "place" : {
+              "filePath" : "/specs/idportenPage.gspec",
+              "lineNumber" : 66
+            },
+            "name" : "aligned horizontally all avbryt",
+            "errors" : [ "\"avbryt\" is not aligned horizontally all with \"ssnnummer\". Offset is 111px" ],
+            "highlight" : [ "ssnnummer", "avbryt" ]
+          }, {
+            "status" : "error",
+            "place" : {
+              "filePath" : "/specs/idportenPage.gspec",
+              "lineNumber" : 67
+            },
+            "name" : "aligned horizontally all neste",
+            "errors" : [ "\"neste\" is not aligned horizontally all with \"ssnnummer\". Offset is 111px" ],
+            "highlight" : [ "ssnnummer", "neste" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "/specs/idportenPage.gspec",
+              "lineNumber" : 68
+            },
+            "name" : "aligned horizontally all ssnnummer",
+            "highlight" : [ "ssnnummer", "ssnnummer" ]
+          } ]
+        }, {
+          "name" : "password",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "/specs/idportenPage.gspec",
+              "lineNumber" : 30
+            },
+            "name" : "height 25 to 35 px",
+            "highlight" : [ "password" ]
+          } ]
+        }, {
+          "name" : "logo",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "/specs/idportenPage.gspec",
+              "lineNumber" : 33
+            },
+            "name" : "image file logo-4.gif,  error 20px",
+            "errors" : [ "Element does not look like \"\\specs\\logo-4.gif\". There are 1183 mismatching pixels but max allowed is 20" ],
+            "highlight" : [ "logo" ],
+            "imageComparison" : {
+              "actualImage" : "layout-2-logo-actual.png",
+              "expectedImage" : "layout-3-logo-expected.png",
+              "comparisonMapImage" : "layout-4-logo-map.png"
+            }
+          } ]
+        }, {
+          "name" : "ssn_nummer_label",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "/specs/idportenPage.gspec",
+              "lineNumber" : 36
+            },
+            "name" : "text is \"Fødselsnummer:\"",
+            "highlight" : [ "ssn_nummer_label" ]
+          } ]
+        }, {
+          "name" : "idporten_logo",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "/specs/idportenPage.gspec",
+              "lineNumber" : 39
+            },
+            "name" : "right-of minid-text 10px",
+            "errors" : [ "\"idporten_logo\" is -458px right of \"minid-text\" instead of 10px" ],
+            "highlight" : [ "idporten_logo", "minid-text" ]
+          } ]
+        } ],
+        "sections" : [ {
+          "name" : "Skeleton",
+          "place" : {
+            "filePath" : "/specs/idportenPage.gspec",
+            "lineNumber" : 41
+          },
+          "objects" : [ {
+            "name" : "avbryt",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "/specs/idportenPage.gspec",
+                "lineNumber" : 43
+              },
+              "name" : "inside box",
+              "highlight" : [ "avbryt", "box" ]
+            } ]
+          }, {
+            "name" : "neste",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "/specs/idportenPage.gspec",
+                "lineNumber" : 43
+              },
+              "name" : "inside box",
+              "highlight" : [ "neste", "box" ]
+            } ]
+          }, {
+            "name" : "password",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "/specs/idportenPage.gspec",
+                "lineNumber" : 43
+              },
+              "name" : "inside box",
+              "highlight" : [ "password", "box" ]
+            } ]
+          }, {
+            "name" : "ssnnummer",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "/specs/idportenPage.gspec",
+                "lineNumber" : 43
+              },
+              "name" : "inside box",
+              "highlight" : [ "ssnnummer", "box" ]
+            } ]
+          }, {
+            "name" : "minid-text",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "/specs/idportenPage.gspec",
+                "lineNumber" : 43
+              },
+              "name" : "inside box",
+              "highlight" : [ "minid-text", "box" ]
+            }, {
+              "status" : "info",
+              "place" : {
+                "filePath" : "/specs/idportenPage.gspec",
+                "lineNumber" : 48
+              },
+              "name" : "inside inside_box",
+              "highlight" : [ "minid-text", "inside_box" ]
+            } ]
+          }, {
+            "name" : "logo",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "/specs/idportenPage.gspec",
+                "lineNumber" : 48
+              },
+              "name" : "inside inside_box",
+              "highlight" : [ "logo", "inside_box" ]
+            } ]
+          }, {
+            "name" : "idporten_logo",
+            "specs" : [ {
+              "status" : "info",
+              "place" : {
+                "filePath" : "/specs/idportenPage.gspec",
+                "lineNumber" : 48
+              },
+              "name" : "inside inside_box",
+              "highlight" : [ "idporten_logo", "inside_box" ]
+            } ]
+          } ]
+        } ]
+      } ],
+      "objects" : {
+        "neste" : {
+          "area" : [ 628, 379, 111, 39 ]
+        },
+        "password" : {
+          "area" : [ 444, 313, 140, 31 ]
+        },
+        "avbryt" : {
+          "area" : [ 281, 379, 97, 39 ]
+        },
+        "inside_box" : {
+          "area" : [ 281, 201, 458, 46 ]
+        },
+        "ssn_nummer_label" : {
+          "area" : [ 281, 267, 162, 26 ]
+        },
+        "minid-text" : {
+          "area" : [ 281, 206, 458, 30 ]
+        },
+        "idporten_logo" : {
+          "area" : [ 281, 206, 458, 30 ]
+        },
+        "ssnnummer" : {
+          "area" : [ 444, 268, 140, 33 ]
+        },
+        "logo" : {
+          "area" : [ 681, 208, 58, 26 ]
+        },
+        "header-text" : {
+          "area" : [ 260, 130, 500, 31 ]
+        },
+        "box" : {
+          "area" : [ 260, 191, 500, 303 ]
+        },
+        "header-logo" : {
+          "area" : [ 625, 83, 185, 76 ]
+        }
+      },
+      "screenshot" : "layout-1-screenshot.png",
+      "type" : "layout"
+    } ]
+  }
+}
