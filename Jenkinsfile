@@ -31,3 +31,12 @@ pipeline {
         }
 	}
 		}
+		
+		
+		String readCommitId() {
+    return sh(returnStdout: true, script: 'git rev-parse HEAD').trim()
+}
+
+String readCommitMessage() {
+    return sh(returnStdout: true, script: 'git log -1 --pretty=%B').trim()
+}
